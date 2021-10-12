@@ -56,5 +56,9 @@ console.log(typeOfEmail(email))
 function checkEmailValidity(email) {
     return (email.includes('@') && !email.includes(',') && (email.slice(-1) !== '.'))
 }
-
 console.log(checkEmailValidity(email))
+
+//En nu in arrow function
+let checkEmail = email =>  (email.includes('@') && !email.includes(',') && (email.slice(-1) !== '.'))
+console.log(checkEmail(email))
+
